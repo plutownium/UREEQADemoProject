@@ -50,7 +50,7 @@ function sieveOfEratosthenes(n) {
   // Useful link: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
   // ****####****
   // ****####****
-  // It is from StackOverflow with a little editing. Here is the link:
+  // It is from StackOverflow with a little editing. I renamed the awfully named 'array' to 'candidates'. Here is the original:
   //   https://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number
   // ****####****
   // ****####****

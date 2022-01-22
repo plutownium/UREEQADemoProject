@@ -8,8 +8,4 @@ export default function displayMedian(variedInput) {
     console.log(variedInput);
     return variedInput.toString();
   }
-  //   else {
-  //     console.log(variedInput, variedInput.length);
-  //     throw Error("you shouldn't be able to get here you know");
-  //   }
 }

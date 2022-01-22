@@ -77,3 +77,5 @@ function sieveOfEratosthenes(n) {
 
   return output;
 }
+
+module.exports = { getMedianNumbers, sieveOfEratosthenes };

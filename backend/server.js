@@ -48,7 +48,12 @@ function getMedianNumbers(input) {
 function sieveOfEratosthenes(n) {
   // Eratosthenes algorithm to find all primes under n
   // Useful link: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
-  // It is from StackOverflow with a little editing.
+  // ****####****
+  // ****####****
+  // It is from StackOverflow with a little editing. Here is the link:
+  //   https://stackoverflow.com/questions/15471291/sieve-of-eratosthenes-algorithm-in-javascript-running-endless-for-large-number
+  // ****####****
+  // ****####****
   const candidates = [];
   const upperLimit = Math.sqrt(n);
   const output = [];

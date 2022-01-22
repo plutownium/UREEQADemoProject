@@ -13,7 +13,17 @@ app.get("/:number", function (req, res) {
   // This line allows the frontend and backend to talk to each other despite having different origins.
   // It is crucial to communication.
   res.header("Access-Control-Allow-Origin", "*");
-  res.send(median);
+  //   res.json({ data: median });
+  console.log(median, 17);
+
+  if (typeof median === "number") {
+    // need #s sent as strings or else Express interprets it as trying to set the status code
+    const medianAsString = median.toString();
+    res.status(200).send(medianAsString);
+  } else {
+    // requires no fancy hacking because it's an array, which Express handles just fine.
+    res.status(200).send(median);
+  }
 });
 
 app.listen(port, () => {
@@ -59,8 +69,8 @@ function sieveOfEratosthenes(n) {
   }
 
   // All array[i] set to true are primes
-  for (var i = 2; i < n; i++) {
-    if (array[i]) {
+  for (let i = 2; i < n; i++) {
+    if (candidates[i]) {
       output.push(i);
     }
   }
